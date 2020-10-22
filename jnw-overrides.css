@@ -41,7 +41,7 @@ li.shrink {
 	margin-bottom: -0.25em;
 }
 ul.filenav {
-	list-style:none;
+	list-style: none !important;
 }
 li.folder:before {
 	content: "🗁\0000a0" ;
@@ -60,6 +60,12 @@ li.tgfile:before {
 }
 p.shrink {
 	font-size: 75% !important;
+}
+.shrinkbox {
+	border: 2pt solid lightgreen !important ;
+	padding: 10pt !important ;
+	font-size: 60% !important;
+	margin: 0.25em !important ;
 }
 span.shrink {
 	font-size: 75% !important;
