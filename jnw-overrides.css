@@ -40,6 +40,24 @@ li.shrink {
 	font-size: 50% !important;
 	margin-bottom: -0.25em;
 }
+ul.filenav {
+	list-style:none;
+}
+li.folder:before {
+	content: "🗁\0000a0" ;
+}
+li.audiofile:before {
+	content: "🕪\0000a0" ;
+}
+li.usfile:before {
+	content: "🗍\0000a0" ;
+}
+.monospace li {
+	font-family: "DejaVu Sans Mono", "Liberation Mono", monospace !important ;
+}
+li.tgfile:before {
+	content: "📄\0000a0"
+}
 p.shrink {
 	font-size: 75% !important;
 }
