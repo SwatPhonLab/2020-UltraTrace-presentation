@@ -45,13 +45,13 @@
 					<h1><div style="margin-bottom: 0.5em !important ;">UltraTrace: A free/open-source cross-platform tool for manual annotation of ultrasound tongue imaging data</div></h1>
 					<div style="padding-top:0.1in; padding-bottom: 0.3in;">
 						<!-- h3 -->
-						<div style="width: 100%;">
+						<!-- div style="width: 100%;">
 							<div style="width: 19%; float: left; font-size: 65%">
 								<img style="width: 6em; height: 6em;" src="img/pic_JNW.jpg"/><br />
 								Kevin Murphy¹
-							</div>
+							</div -->
 						<!-- /h3-->
-							<div style="width: 19%; float: left; font-size: 65%">
+							<!-- div style="width: 19%; float: left; font-size: 65%">
 								<img style="width: 6em; height: 6em;" src="img/pic_DMT.jpg"/><br />
 								<u>Nathaniel Ziv Stern</u>¹
 							</div>
@@ -67,6 +67,13 @@
 								<img style="width: 6em; height: 6em;" src="img/pic_MZ.jpg"/><br />
 								<u>Jonathan Washington</u>²
 							</div>
+						</div -->
+						<div style="width: 100%; margin-bottom: 1em;">
+							Kevin Murphy,¹
+							<u>Nathaniel Ziv Stern</u>,¹
+							<u>Daniel Swanson</u>,²
+							Caleb Ho,¹
+							<u>Jonathan Washington</u>²
 						</div>
 						<div style="clear: both;"></div>
 						<ol class="supershrink">
@@ -75,7 +82,7 @@
 							<!-- li><span class="cyrillic"></span></li -->
 						</ol>
 					</div>
-					<div style="width: 100%; background: white;">
+					<div style="width: 100%; background: white; margin-top: 1em;">
 						<img class="noframe" src="img/swarthmorelogowhite.svg" style="height: 4em;"/>
 					</div>
 				</section>
@@ -93,14 +100,12 @@
 					<div class="box">
 					<p class="bbb">The next ~18 minutes:</p>
 					<ul>
-						<li><span class="highlight">Background</span></li>
+						<li><span class="highlight">Main features</span></li>
 						<ul class="shrink">
-							<li>Main features</span></li>
-							<li>Why FOSS</span></li>
-						</ul>
-						<li><span class="highlight">Competitors</span></li>
-						<ul class="shrink">
-							<li>Stuff</li>
+							<li>Freedoms</li>
+							<li>Platform support</li>
+							<li>Format support</li>
+							<li>User features</li>
 						</ul>
 						<li><span class="highlight">Discussion</span></li>
 						<li><span class="highlight">Future work</span></li>
@@ -113,7 +118,7 @@
 					<h2>Freedom</h2>
 					<div class="box">
 					<ul class="nobullet">
-						<li>UltraTrace is:</li>
+						<li class="bbb">UltraTrace is:</li>
 						<ul>
 							<li>released as <span class="highlight">Free/Open Source Software</span> (FOSS)</li>
 							<li>licensed under the <span class="highlight">General Public License</span> (GPL) v3</li>
@@ -137,7 +142,7 @@
 					<h2>Why FOSS</h2>
 					<div class="float-left">
 						<ul style="list-style: none !important;">
-							<li style="margin-left: -1em !important;">GPLv3 grants the freedom to …</li>
+							<li class="bbb" style="margin-left: -1em !important;">GPLv3 grants the freedom to …</li>
 							<ul>
 								<li><span class="highlight">run</span> the software</li>
 								<li><span class="highlight">study</span> the software</li>
@@ -145,7 +150,7 @@
 								<li><span class="highlight">modify</span> the software</li>
 								<li>(even <span class="highlight">sell</span> the software)</li>
 							</ul>
-							<li style="margin-left: -1em !important;">… as long as you …</li>
+							<li class="bbb" style="margin-left: -1em !important;">… as long as you …</li>
 							<ul>
 								<li>name © holders</li>
 								<li>state any changes</li>
@@ -155,7 +160,7 @@
 						</ul>
 					</div>
 					<div class="float-right">
-					  <p>This encourages:</p>
+					  <p class="bbb">This encourages:</p>
   					<ul>
   					  <li><span class="highlight">sharing</span> of data, formats, algorithms, etc.</li>
   					  <li><span class="highlight">continuity</span> between possibly temporally distant projects</li>
@@ -173,14 +178,14 @@
 					<tbody>
 						<th><td>UltraTrace</td><td>GetContours</td><td>WASL</td><td>Palatoglossotron</td><td>AAA</td></th>
 						<tr><td>Windows</td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td></tr>
-						<tr><td>macOS</td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-red">✘</span></td><td><span class="highlight-red">✘</span></td></tr>
-						<tr><td>GNU/Linux</td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-red">✘</span></td><td><span class="highlight-red">✘</span></td></tr>
+						<tr><td>macOS</td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-red">✘</span>?</td><td><span class="highlight-red">✘</span></td></tr>
+						<tr><td>GNU/Linux</td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-green">✔</span></td><td><span class="highlight-red">✘</span>?</td><td><span class="highlight-red">✘</span></td></tr>
 					</tbody>
 				</table>
 				<div style="width: 120%; position: absolute; left: -10%;">
-				<img style="width: 32%" src="img/platforms Windows.png"/>
-				<img style="width: 33%;" src="img/platforms macOS.png"/>
-				<img style="width: 32%" src="img/platforms Linux.png"/>
+				<img style="width: 32%;" src="img/platforms Windows.png"/>
+				<img style="width: 33%; overflow: hidden; margin-bottom: -0.1em;" src="img/platforms macOS.png"/>
+				<img style="width: 32%;" src="img/platforms Linux.png"/>
 				</div>
 			</section>
 
@@ -194,7 +199,21 @@
 						<tr><td>AAA-exported</td><td><span class="highlight-green">✔</span></td><td><span class="highlight-red">✘</span></td><td><span class="highlight-red">✘</span></td><td><span class="highlight-red">✘</span></td><td><span class="highlight-green">✔</span></td></tr>
 					</tbody>
 				</table>
+				<img src="img/Peek 2020-10-17 23-23.gif" class="float-left"/>
+          	<img src="img/Peek 2020-10-18 01-54.gif" class="float-right"/>
 			</section>
+        <!-- section>
+          <h2>Data Formats</h2>
+          <img src="img/Peek 2020-10-17 23-22.gif"/>
+        </section>
+        <section>
+          <h2>Data Formats</h2>
+          <img src="img/Peek 2020-10-17 23-23.gif"/>
+        </section>
+        <section>
+          <h2>Data Formats</h2>
+          <img src="img/Peek 2020-10-18 01-54.gif"/>
+        </section -->
 
 			<section>
 				<h2>Feature Comparison: User Features</h2>
@@ -209,18 +228,8 @@
           </table>
 				</section>
 
-        <section>
-          <h2>Text Annotations: Zooming/panning</h2>
-          <img src="img/Peek 2020-10-17 22-39.gif"/>
-        </section>
-        <section>
-          <h2>Text Annotations: Navigating by block</h2>
-          <img src="img/Peek 2020-10-17 23-26.gif"/>
-        </section>
-        <section>
-          <h2>Text Annotations: Collapsible Tiers</h2>
-          <img src="img/Peek 2020-10-17 22-40.gif"/>
-        </section>
+
+
 			<section>
 				<h2>Project Management</h2>
 				<div class="float-left">
@@ -285,33 +294,46 @@
 					</ul>
 				</div>
 			</section>
+
+
         <section>
-          <h2>Data Formats</h2>
-          <img src="img/Peek 2020-10-17 23-22.gif"/>
+          <h2>Main tracing features</h2>
+				<div style="background-color: rgba(0.3, 0.3, 0.3, 0.5); transparency 50%; position: absolute; bottom: 2em; left: -2em; margin: 0 0 0 0; padding: 0.5em 0.5em 0.5em 0; ">
+					<ul class="shrink">
+						<li>Tracing</li>
+						<li>Touch-screen support</li>
+						<li>Adjust points</li>
+						<li>Select/drag multiple points</li>
+						<li>Deletion of points</li>
+						<li>Full undo/redo buffer</li>
+						<li>Arbitrary colour of points</li>
+						<li>Arbitrary number of landmarks</li>
+					</ul>
+				</div>
+          <img src="img/Peek 2020-10-23 01-35.gif"/>
         </section>
-        <section>
-          <h2>Data Formats</h2>
-          <img src="img/Peek 2020-10-17 23-23.gif"/>
-        </section>
-        <section>
-          <h2>Data Formats</h2>
-          <img src="img/Peek 2020-10-18 01-54.gif"/>
-        </section>
-        <section>
-          <h2>Arbitrary Zoom and Pan</h2>
-          <img src="img/Peek 2020-10-18 17-14.gif"/>
-        </section>
+			<section>
+				<h2>Copy/pasting of points</h2>
+          	<img src="img/Peek 2020-10-18 17-14.gif"/>
+			</section>
         <section>
           <h2>Arbitrary Zoom and Pan</h2>
           <img src="img/Peek 2020-10-18 17-29.gif"/>
         </section>
+        <section>
+          <h2>Text Annotations: Zooming/panning</h2>
+          <img src="img/Peek 2020-10-17 22-39.gif"/>
+        </section>
+        <section>
+          <h2>Text Annotations: Navigating by block</h2>
+          <img src="img/Peek 2020-10-17 23-26.gif"/>
+        </section>
+        <section>
+          <h2>Text Annotations: Collapsible Tiers</h2>
+          <img src="img/Peek 2020-10-17 22-40.gif"/>
+        </section>
 
-				<section>
-					<h2>Discussion</h2>
-					<ul>
-						<li>
-					</ul>
-				</section>
+
 
 				<section>
 					<h2>Future work</h2>
@@ -321,13 +343,23 @@
 				</section>
 
 				<section>
+					<h2>Discussion</h2>
+					<ul>
+						<li>Authors of alternatives present—no ill will meant!</li>
+						<li>
+					</ul>
+				</section>
+
+
+				<section>
 
 					<section style="font-family: FreeSerif;">
 						<h2 class="cyrillic large">Thank you!</h2>
-						<b>With support from:</b>
+						<b>With generous support from:</b>
 						<ul>
-							<li>[Ziv's summer grants]</li>
-							<li>Swarthmore College faculty research grant</li>
+							<li>Joel Dean Summer Research Fellowship</li>
+							<li>Eugene M. Lang Summer Research Fellowship</li>
+							<li>Swarthmore College Faculty Research Support Grants</li>
 						</ul>
 						<br/>
 						<p><b>Also thanks to:</b>
