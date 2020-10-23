@@ -58,6 +58,12 @@ li.usfile:before {
 li.tgfile:before {
 	content: "📄\0000a0"
 }
+.nobullet li {
+	margin-left: -1em !important;
+}
+ul.nobullet {
+	list-style: none !important;
+}
 p.shrink {
 	font-size: 75% !important;
 }
