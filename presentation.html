@@ -416,24 +416,15 @@
 						<h2>Aligning ultrasound frames with audio</h2>
 						<ul>
 							<li>Frame positions are stored in a TextGrid point tier</li>
-							<li>First read of AAA exported data:</li>
+							<li>Generated when ultrasound file first opened</li>
+							<li>AAA exported data:</li>
 							<ul>
-								<li>frame times calculated</li>
-								<li>added to TextGrid</li>
+								<li>calculate from framerate</li>
 							</ul>
 							<li>Reading DICOM:</li>
 							<ul>
-								<li>calculated based on frametime and/or framerate</li>
-								<li>added to TextGrid</li>
-							</ul>
-							<li>Reading Philips native data:</li>
-							<ul>
-								<li>possible to read frametimes of individual frames</li>
-								<li>not yet fully implemented</li>
-							</ul>
-							<li>What we usually do, though:</li>
-							<ul>
-								<li>batch calculate and insert into TextGrids</li>
+							  <li>read individual frametimes from native Phillips data</li>
+							  <li>fallback to framerate if not present</li>
 							</ul>
 						</ul>
 					</section>
