@@ -107,15 +107,15 @@
 							<li>Format support</li>
 							<li>User features</li>
 						</ul>
-						<li><span class="highlight">Discussion</span></li>
 						<li><span class="highlight">Future work</span></li>
+						<li><span class="highlight">Discussion</span></li>
 					</ul>
 					</div>
 					</div>
 				</section>
 				
 				<section>
-					<h2>Freedom</h2>
+					<h2>Freedoms</h2>
 					<div class="box">
 					<ul class="nobullet">
 						<li class="bbb">UltraTrace is:</li>
@@ -140,7 +140,7 @@
 
 				<section>
 					<h2>Why FOSS</h2>
-					<div class="float-left">
+					<div class="float-left" style="margin-bottom: 1em;">
 						<ul style="list-style: none !important;">
 							<li class="bbb" style="margin-left: -1em !important;">GPLv3 grants the freedom to …</li>
 							<ul>
@@ -164,11 +164,15 @@
   					<ul>
   					  <li><span class="highlight">sharing</span> of data, formats, algorithms, etc.</li>
   					  <li><span class="highlight">continuity</span> between possibly temporally distant projects</li>
-  					  <li>fewer conflicting standards (e.g. file formats)</li>
+  					  <li><span class="highlight">fewer conflicting standards</span> (e.g. file formats)</li>
   					  <li><span class="highlight">collaboration</span> between people doing different things</li>
-  					  <li>optimal usage of limited resources</li>
+  					  <li><span class="highlight">optimal usage of limited resources</span></li>
   					</ul>
   			  </div>
+			  <div style="clear: both;"/>
+				<div class="box">
+					<u>F</u>ree dependencies also an issue of <span class="highlight">social justice</span>:<br/>e.g., no access to MATLAB does not inhibit use.
+				</div>
 				</section>
 
 
@@ -318,42 +322,63 @@
 			</section>
         <section>
           <h2>Arbitrary Zoom and Pan</h2>
+				<div style="background-color: rgba(0.3, 0.3, 0.3, 0.5); transparency 50%; position: absolute; bottom: 2em; left: -1em; margin: 0 0 0 0; padding: 0.5em 0.5em 0.5em 0; width: 8em;">
+					<p>Added portability:</p>
+					<ul class="shrink">
+			 			<li>coordinates stored in <span class="highlight">percentages</span>, not pixels or physical dimensions</li>
+						<li><span class="highlight">Autosaves</span> data</li>
+						<li>Stored in <tt class="highlight">json</tt></li>
+				</div>
           <img src="img/Peek 2020-10-18 17-29.gif"/>
-        </section>
-        <section>
-          <h2>Text Annotations: Zooming/panning</h2>
-          <img src="img/Peek 2020-10-17 22-39.gif"/>
-        </section>
-        <section>
-          <h2>Text Annotations: Navigating by block</h2>
-          <img src="img/Peek 2020-10-17 23-26.gif"/>
-        </section>
-        <section>
-          <h2>Text Annotations: Collapsible Tiers</h2>
-          <img src="img/Peek 2020-10-17 22-40.gif"/>
-        </section>
-
-
-
+				</section>
+				<section>
+					<h2>Text Annotations: Zooming/panning</h2>
+			 FIXME: also show clicking in arbitrary location on spectrogram
+					<img src="img/Peek 2020-10-17 22-39.gif"/>
+				</section>
+				<section>
+					<h2>Text Annotations: Navigating by interval</h2>
+					<img src="img/Peek 2020-10-17 23-26.gif"/>
+				</section>
+				<section>
+					<h2>Text Annotations: Collapsible Tiers</h2>
+					<img src="img/Peek 2020-10-17 22-40.gif"/>
+				</section>
+				<section>
+					<h2>Synchronised playback of section</h2>
+					FIXME
+				</section>
 				<section>
 					<h2>Future work</h2>
 					<ul>
-						<li></li>
+						<li>Direct manipulation of interval annotations</li>
+						<li>Waveform collapsible as spectrogram</li>
+						<li>General UI improvements (perhaps rewrite)</li>
+						<li>Automatic tracing algorithm(s: SLURP?  neural approach?)</li>
+						<li>Eventually: 3D/4D support</li>
 					</ul>
 				</section>
 
-				<section>
+				<section data-auto-animate>
 					<h2>Discussion</h2>
 					<ul>
-						<li>Authors of alternatives present—no ill will meant!</li>
-						<li>
+						<li>Authors of (most) alternatives present—no ill will meant!</li>
+						<li>We acknowledge many advantages offered by alternatives</li>
+						<li>UltraTrace — an additional available tool, maybe filling a niche?</li>
+						<ul>
+							<li>limited resources?</li>
+							<li>more comfortable with Python?</li>
+							<li>care more about our specific set of features?</li>
+						</ul>
+						<li data-id="fork">Available on GitHub (issues and pull requests wecome)!<br/>
+						<a href="http://github.com/SwatPhonLab/UltraTrace">http://github.com/SwatPhonLab/UltraTrace</a></li>
 					</ul>
 				</section>
 
 
 				<section>
 
-					<section style="font-family: FreeSerif;">
+					<section style="font-family: FreeSerif;" data-auto-animate>
 						<h2 class="cyrillic large">Thank you!</h2>
 						<b>With generous support from:</b>
 						<ul>
@@ -366,10 +391,41 @@
 						<ul>
 							<li>reviewer for UltraFest</li>
 						</ul>
+						<ul style="list-style: none !important; text-align: center;">
+						<li class="box" data-id="fork">Fork us on GitHub (issues and pull requests wecome)!<br/>
+						<code><a href="http://github.com/SwatPhonLab/UltraTrace">http://github.com/SwatPhonLab/UltraTrace</a></code></li>
+						</ul>
+
 					</section>
 
 					<section>
 						<h2>Appendix slides</h2>
+					</section>
+
+					<section>
+						<h2>Aligning ultrasound frames with audio</h2>
+						<ul>
+							<li>Frame positions are stored in a TextGrid point tier</li>
+							<li>First read of AAA exported data:</li>
+							<ul>
+								<li>frame times calculated</li>
+								<li>added to TextGrid</li>
+							</ul>
+							<li>Reading DICOM:</li>
+							<ul>
+								<li>calculated based on frametime and/or framerate</li>
+								<li>added to TextGrid</li>
+							</ul>
+							<li>Reading Philips native data:</li>
+							<ul>
+								<li>possible to read frametimes of individual frames</li>
+								<li>not yet fully implemented</li>
+							</ul>
+							<li>What we usually do, though:</li>
+							<ul>
+								<li>batch calculate and insert into TextGrids</li>
+							</ul>
+						</ul>
 					</section>
 
 				</section>
